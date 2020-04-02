@@ -1,0 +1,31 @@
+.content {
+    display: flex;
+    transition: 0.3s;
+    overflow: hidden;
+    width: 110%;
+    height: 700px;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.wrapper {
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.corusel_left,
+.corusel_right {
+    position: absolute;
+    top: 50%;
+    padding: 12px;
+    background: transparent;
+    border: none;
+    transform: translateY(50%);
+}
+.corusel_left {
+    left: 0;
+}
+.corusel_right {
+    right: 0;
+}
+
