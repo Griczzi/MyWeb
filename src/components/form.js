@@ -65,6 +65,7 @@ export default class PageForm extends React.Component {
                     Message
                     <input type="text" name="massege" value={this.state.messege} onChange={this.hendleInputChange} />
                 </label> */}
+                <div data-netlify-recaptcha="true"></div>
                 <button type="submit">Отправить</button>
             </form>
         )
