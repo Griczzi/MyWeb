@@ -1,26 +1,27 @@
+
 import React from "react"
 
 export default class PageForm extends React.Component {
-    state = { //Добавили состояние
-        firstName: "",
-        phone: "",
-        message: "",
-    }
+    // state = { //Добавили состояние
+    //     firstName: "",
+    //     phone: "",
+    //     message: "",
+    // }
 
-    hendleInputChange = event => {
-        const target = event.target;
-        const value = target.value
-        const name = target.name;
+    // hendleInputChange = event => {
+    //     const target = event.target;
+    //     const value = target.value
+    //     const name = target.name;
 
-        this.setState({
-            [name]: value,
-        })
-    }
+    //     this.setState({
+    //         [name]: value,
+    //     })
+    // }
 
-    handleSubmit = event => {
-        event.preventDefault()
-        alert(`Welcome ${this.state.firstName} ${this.state.phone}!`)
-    }
+    // handleSubmit = event => {
+    //     event.preventDefault()
+    //     //alert(`Welcome ${this.state.firstName} ${this.state.phone}!`)
+    // }
 
     render() {
         return (
@@ -49,23 +50,18 @@ export default class PageForm extends React.Component {
         //     </ul>
         // </form>
 
-            <form onSubmit={this.handleSubmit} method="POST" data-netlify="true" >
+            <form name="contact-form" methodx="POST" data-netlify="true" data-netlify-honeypot="bot-field">
                 <label>
-                    First name
-                    <input type="text" name="firstName" value={this.state.firstName} onChange={this.hendleInputChange} />
+                    Имя:
+                    <input type="text" name="firstName" placeholder="ваше имя " />
                 </label>
                 <br />
                 <label>
-                    Phone
-                    <input type="phone" name="phone" value={this.state.phone} onChange={this.hendleInputChange} />
+                    Телефон:
+                    <input type="phone" name="phone" placeholder="ваш телефон" />
                 </label>
                 <br />
-                <label>Message: <textarea name="message" value={this.state.messege} onChange={this.hendleInputChange} ></textarea></label>
-                {/* <label>
-                    Message
-                    <input type="text" name="massege" value={this.state.messege} onChange={this.hendleInputChange} />
-                </label> */}
-                <div data-netlify-recaptcha="true"></div>
+                <label>Сообщение: <textarea name="message" placeholder="текст"></textarea></label>
                 <button type="submit">Отправить</button>
             </form>
         )
