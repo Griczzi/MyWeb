@@ -22,7 +22,7 @@ import React from "react"
             method: 'POST',
             headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
             body: encode({
-              'contact-form': form.getAttribute('name'),
+              'form-name': form.getAttribute('name'),
               ...state,
             }),
           })
@@ -53,31 +53,6 @@ import React from "react"
 
     //render() {
         return (
-            
-
-        // <form method="post" action="#">
-        //     <div className="field half first">
-        //       <label htmlFor="name">Name</label>
-        //       <input type="text" name="name" id="name" />
-        //     </div>
-        //     <div className="field half">
-        //       <label htmlFor="email">Email</label>
-        //       <input type="text" name="email" id="email" />
-        //     </div>
-        //     <div className="field">
-        //       <label htmlFor="message">Message</label>
-        //       <textarea name="message" id="message" rows="4"></textarea>
-        //     </div>
-        //     <ul className="actions">
-        //       <li>
-        //         <input type="submit" value="Send Message" className="special" />
-        //       </li>
-        //       <li>
-        //         <input type="reset" value="Reset" />
-        //       </li>
-        //     </ul>
-        // </form>
-
             <form 
                 name="contact-form"
                 method="post"
@@ -86,16 +61,22 @@ import React from "react"
                 onSubmit={handleSubmit}
                 >
                 <label>
-                    Имя:
-                    <input type="text" name="firstName" placeholder="ваше имя" onChange={handleChange} />
+                    Имя: <input type="text" name="firstName" placeholder="ваше имя" onChange={handleChange} />
                 </label>
                 <br />
                 <label>
-                    Телефон:
-                    <input type="phone" name="phone" placeholder="ваш телефон" onChange={handleChange} />
+                    Телефон: <input type="phone" name="phone" placeholder="ваш телефон" onChange={handleChange} />
                 </label>
                 <br />
                 <label>Сообщение: <textarea name="message" placeholder="текст" onChange={handleChange}></textarea></label>
+
+                <input type="hidden" name="form-name" value="contact" />
+                <p hidden>
+                <label>
+                    Don’t fill this out: <input name="bot-field" onChange={handleChange} />
+                </label>
+                </p>
+
                 <button>Отправить</button>
             </form>
         )
