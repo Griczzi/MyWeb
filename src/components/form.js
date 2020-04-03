@@ -50,7 +50,12 @@ export default class PageForm extends React.Component {
         //     </ul>
         // </form>
 
-            <form name="contact-form" methodx="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+            <form 
+                name="contact-form"
+                method="post"
+                data-netlify="true"
+                data-netlify-honeypot="bot-field"
+                >
                 <label>
                     Имя:
                     <input type="text" name="firstName" placeholder="ваше имя " />
@@ -62,7 +67,7 @@ export default class PageForm extends React.Component {
                 </label>
                 <br />
                 <label>Сообщение: <textarea name="message" placeholder="текст"></textarea></label>
-                <button type="submit">Отправить</button>
+                <button>Отправить</button>
             </form>
         )
     }
