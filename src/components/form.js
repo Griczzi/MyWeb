@@ -1,7 +1,7 @@
 
 import React from "react"
 
-//export default class PageForm extends React.Component {
+
     function encode(data) {
         return Object.keys(data)
           .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
@@ -29,29 +29,6 @@ import React from "react"
             // .then(() => navigate(form.getAttribute('action')))
             // .catch((error) => alert(error))
         }
-    
-    // state = { //Добавили состояние
-    //     firstName: "",
-    //     phone: "",
-    //     message: "",
-    // }
-
-    // hendleInputChange = event => {
-    //     const target = event.target;
-    //     const value = target.value
-    //     const name = target.name;
-
-    //     this.setState({
-    //         [name]: value,
-    //     })
-    // }
-
-    // handleSubmit = event => {
-    //     event.preventDefault()
-    //     //alert(`Welcome ${this.state.firstName} ${this.state.phone}!`)
-    // }
-
-    //render() {
         return (
             <form 
                 name="contact-form"
@@ -71,11 +48,11 @@ import React from "react"
                 <label>Сообщение: <textarea name="message" placeholder="текст" onChange={handleChange}></textarea></label>
 
                 <input type="hidden" name="form-name" value="contact" />
-                <p hidden>
+                {/* <p hidden>
                 <label>
-                    Don’t fill this out: <input name="bot-field" onChange={handleChange} />
+                    <input name="bot-field" onChange={handleChange} />
                 </label>
-                </p>
+                </p> */}
 
                 <button>Отправить</button>
             </form>
