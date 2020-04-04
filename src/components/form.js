@@ -35,6 +35,7 @@ import React from "react"
               ...state,
             }),
           })
+            .then(() => { alert('***** ЗАЯВКА ОТПРАВЛЕНА! *****') });
             // .then(() => {
             //  setAlert({type: 'success', message: 'Ваша заявка успешно отправлена!'});
             // })
