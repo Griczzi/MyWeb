@@ -10,6 +10,7 @@ import React from "react"
       
       export default function Contact() {
         const [state, setState] = React.useState({})
+        //const setAlert = useState({ type: false, message: '' });
       
         const handleChange = (e) => {
           setState({ ...state, [e.target.name]: e.target.value })
@@ -17,7 +18,15 @@ import React from "react"
       
         const handleSubmit = (e) => {
           e.preventDefault()
+
+        if ( !e.target.elements['name'].value || !e.target.elements['phone'].value || !e.target.elements['message'].value ) {
+            alert('*****  Заполните все поля!  *****')
+            // setAlert({type: 'danger', message: 'Введите свои данные!'});
+            return;
+          }
+
           const form = e.target
+
           fetch('/', {
             method: 'POST',
             headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
@@ -26,8 +35,10 @@ import React from "react"
               ...state,
             }),
           })
-            // .then(() => navigate(form.getAttribute('action')))
-            // .catch((error) => alert(error))
+            // .then(() => {
+            //  setAlert({type: 'success', message: 'Ваша заявка успешно отправлена!'});
+            // })
+            //  .catch((error) => alert('Не все поля заполнены! Заполните все поля =)'))
         }
         return (
             <form 
@@ -38,7 +49,7 @@ import React from "react"
                 onSubmit={handleSubmit}
                 >
                 <label>
-                    Имя: <input type="text" name="firstName" placeholder="ваше имя" onChange={handleChange} />
+                    Имя: <input type="text" name="name" placeholder="ваше имя" onChange={handleChange} />
                 </label>
                 <br />
                 <label>
@@ -46,14 +57,7 @@ import React from "react"
                 </label>
                 <br />
                 <label>Сообщение: <textarea name="message" placeholder="текст" onChange={handleChange}></textarea></label>
-
                 <input type="hidden" name="form-name" value="contact" />
-                {/* <p hidden>
-                <label>
-                    <input name="bot-field" onChange={handleChange} />
-                </label>
-                </p> */}
-
                 <button>Отправить</button>
             </form>
         )
