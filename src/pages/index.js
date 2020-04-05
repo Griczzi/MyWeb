@@ -3,7 +3,6 @@ import Courusel from "../components/courusel"
 
 import Layout from "../components/layout"
 import "./index.css"
-//import Image from "../components/image"
 
 const IndexPage = () => (
     <Layout>

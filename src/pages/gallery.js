@@ -1,10 +1,10 @@
 import React from "react"
 import Layout from "../components/layout"
-//import InfImages from "../components/InfiniteImages"
+import { Gallery } from "gatsby-theme-gallery";
 
 export default () => (
     <Layout>
-        {/* <InfImages /> */}
+        <Gallery />
         <h1>gallery</h1>
         
     </Layout>

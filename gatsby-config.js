@@ -1,10 +1,14 @@
 module.exports = {
+
   siteMetadata: {
     title: `Ph. Grits Ilia`,
     description: `My first portfolio is develop in gatsby`,
     author: `Griczzi`,
   },
   plugins: [
+    `gatsby-plugin-emotion`,
+    "gatsby-plugin-theme-ui",
+    "gatsby-theme-gallery",
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -30,7 +34,7 @@ module.exports = {
       {
         resolve: `gatsby-source-filesystem`,
         options: {
-          name: `backgrounds`,
+          name: `pages`,
           path: `${__dirname}/src/images`, // wherever background images are stored
         },
       }
