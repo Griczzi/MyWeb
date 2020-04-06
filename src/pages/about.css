@@ -1,7 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+.wrapper{
+    height: 100vh;
+}
 .about_wrapper {
     margin: 0 auto;
     max-width: 960px;
-    padding: 1rem 1rem;
+    padding: 60px 0 0 0;
+}
+.about_text_h1 {
+    color: rgb(35, 33, 44);
+    font-family: 'PT Sans Narrow', sans-serif;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 100;
 }
 .atricle_item_wrapper {
     display: flex;
@@ -15,7 +28,9 @@
     background-repeat: no-repeat;
 }
 .text {
+    font-family: 'Poiret One', cursive;
     width: 500px;
     margin-right: 0px;
     margin-left: 10%;
+    color: rgb(35, 33, 44);
 }
