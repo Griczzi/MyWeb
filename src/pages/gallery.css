@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+
+.title_gallery {
+    padding-top: 60px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: rgb(35, 33, 44);
+    font-weight: 50;
+}
+.wrapper_gallery {
+    background: rgb(252, 251, 246);
+}
