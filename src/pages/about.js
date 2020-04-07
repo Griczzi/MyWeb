@@ -3,6 +3,7 @@ import Layout from "../components/layout"
 import "./about.css"
 import Iam from "../images/iam.jpg"
 import Form from "../components/form"
+import Footer from "../components/footer"
 
 export default () => (
   <Layout>
@@ -17,6 +18,7 @@ export default () => (
             <Form />
           </div>
         </article>
+        <Footer />
       </div>
     </div>
     

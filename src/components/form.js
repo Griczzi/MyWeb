@@ -1,5 +1,6 @@
 
 import React from "react"
+import "./form.css"
 
 
     function encode(data) {
@@ -59,7 +60,7 @@ import React from "react"
                 <br />
                 <label>Сообщение: <textarea name="message" placeholder="текст" onChange={handleChange}></textarea></label>
                 <input type="hidden" name="form-name" value="contact" />
-                <button>Отправить</button>
+                <button className="form_button">Отправить</button>
             </form>
         )
     }

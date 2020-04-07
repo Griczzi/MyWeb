@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+
+form {
+    margin: 0;
+}
+
+label {
+    display: block;
+	font-size: 0.9em;
+    font-weight: bold;
+}
+label > input,
+label > textarea {
+
+}
+input[type="text"],
+input[type="phone"],
+textarea {
+    background: rgb(255, 255, 255);
+	border-radius: 5px;
+	border: solid 1px rgba(189, 189, 189, 0.151);
+	color: inherit;
+	display: block;
+	outline: 0;
+	padding: 0 0.95em;
+	text-decoration: none;
+    width: 100%;
+    height: 30px;
+    box-shadow: 3px 5px 9px rgba(63, 63, 63, 0.11);
+}
+.form_button {
+    font-family: 'PT Sans Narrow', sans-serif;
+    margin-top: 25px;
+    height: 30px;
+    width: 100px;
+    background: rgb(252, 251, 249) ;
+    border-radius: 5px;
+    border: solid 1px rgba(189, 189, 189, 0.151);
+    box-shadow: 3px 5px 9px rgba(63, 63, 63, 0.11);
+    transition: all 0.3s ease-in-out;
+}
+.form_button:hover {
+    background: rgb(235, 213, 154);
+    color:  rgb(252, 251, 246) ;
+    transition: all 0.3s ease-in-out;
+}
