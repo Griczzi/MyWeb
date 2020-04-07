@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import "./courusel.css"
+import Arrow from "../images/my-icons-collection/svg/next.png"
 
 const Courusel = ({ className, children }) => {
   const [pos, setPos] = useState(0);
@@ -14,8 +15,8 @@ const Courusel = ({ className, children }) => {
       <div className='content' style={{width: 100*children.length+'%', transform: `translateX(-${pos}00vw)`,}}>
         { children }
       </div>
-        <button className="corusel_left" onClick={ handleLeft }>&laquo;</button>
-        <button className="corusel_right" onClick={ handleRight }>&raquo;</button>
+        <button className="corusel_left" onClick={ handleLeft }> <img src={ Arrow } style={{ transform: `rotate(180deg)`, opacity: `50%`, }} /> </button>
+        <button className="corusel_right" onClick={ handleRight }> <img src={ Arrow } style={{ opacity: `50%`, }} /> </button>
     </div>
   )
 }

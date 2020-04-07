@@ -16,11 +16,12 @@
 .corusel_left,
 .corusel_right {
     position: absolute;
-    top: 50%;
+    top: 45%;
     padding: 12px;
     background: transparent;
     border: none;
     transform: translateY(50%);
+    background: rgba(252, 251, 246, 0.459);
 }
 .corusel_left {
     left: 0;

@@ -6,9 +6,9 @@ import "./footer.css"
 
 const Footer = () => (
     <footer className='footer_wrapper'>
-       <a href="#"><img src={Instagram} style={{height: `20px`}} /></a>
+       <a href="https://www.instagram.com/grits.ilia/"><img src={Instagram} style={{height: `20px`}} /></a>
        <a href="https://vk.com/gricphoto"><img src={Vk} style={{height: `20px`}} /></a>
-       <a href="#"><img src={Facebook} style={{height: `20px`}} /></a>
+       <a href="https://www.facebook.com/"><img src={Facebook} style={{height: `20px`}} /></a>
     </footer>
 
 )
