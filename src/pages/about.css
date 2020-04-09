@@ -2,7 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
 
 .wrapper{
-    height: 100vh;
+    height: fit-content;
+    padding-bottom: 50px;
 }
 .about_wrapper {
     margin: 0 auto;
@@ -42,9 +43,11 @@
     margin-bottom: 30px;
 }
 
+/******************** Iphone 5s ***********************/
 @media all and (max-width : 320px ) {
     .wrapper {
-        height: 220vh;
+        height: fit-content;
+        padding-bottom: 50px;
     }
     .atricle_item_wrapper {
         display: flex;
@@ -55,9 +58,23 @@
     .text {
         margin: 5% 5% 0 5%;
         width: fit-content;
-        /* display: flex;
+    }
+}
+
+/*******************  **********************/
+@media all and (max-width : 768px ) {
+    .wrapper {
+        height: fit-content;
+        padding-bottom: 50px;
+    }
+    .atricle_item_wrapper {
+        display: flex;
         flex-direction: column ;
         justify-content: center;
-        align-items: center; */
+        align-items: center;
+    }
+    .text {
+        margin: 5% 5% 0 5%;
+        width: fit-content;
     }
 }
