@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
 
-.wrapper{
+.wrapper_first{
     height: fit-content;
     padding-bottom: 50px;
 }
@@ -45,7 +45,7 @@
 
 /******************** Iphone 5s ***********************/
 @media all and (max-width : 320px ) {
-    .wrapper {
+    .wrapper_first {
         height: fit-content;
         padding-bottom: 50px;
     }
@@ -63,7 +63,7 @@
 
 /******************* all window **********************/
 @media all and (max-width : 768px ) {
-    .wrapper {
+    .wrapper_first {
         height: fit-content;
         padding-bottom: 50px;
     }

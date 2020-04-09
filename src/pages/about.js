@@ -7,7 +7,7 @@ import Footer from "../components/footer"
 
 export default () => (
   <Layout>
-    <div className="wrapper">
+    <div className="wrapper_first">
       <div className="about_wrapper">
         <h1 className="about_text_h1">Обо мне</h1>
         <article className="atricle_item_wrapper">

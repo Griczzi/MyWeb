@@ -41,12 +41,18 @@
         background-size: cover;
         background-position: center;
     }
+    .wrapper {
+        padding-bottom: 0;
+    }
+    .undefined {
+        padding-bottom: 0px;
+    }
 }
 
 /******************* all window **********************/
 @media all and (max-width : 768px ) {
     .carusel_item {
-        height: fit-content;
+        /* height: fit-content; */
     }
     .carusel_item_one {
         height: 100%;

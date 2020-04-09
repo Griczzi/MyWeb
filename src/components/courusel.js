@@ -11,7 +11,7 @@ const Courusel = ({ className, children }) => {
     setPos(pos > 0 ? pos-1 : children.length - 1);
   }
   return (
-    <div className={ className + ' wrapper' }>
+    <div className={ className + ' wrapper' } >
       <div className='content' style={{width: 100*children.length+'%', transform: `translateX(-${pos}00vw)`,}}>
         { children }
       </div>
