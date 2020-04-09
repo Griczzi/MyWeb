@@ -41,11 +41,6 @@
         background-size: cover;
         background-position: center;
     }
-    .layout_wrapper {
-        margin: 0;
-        padding: 0;
-        height: 100vh;
-    }
 }
 
 /******************* all window **********************/
