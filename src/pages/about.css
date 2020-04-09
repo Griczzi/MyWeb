@@ -36,9 +36,28 @@
     color: rgb(35, 33, 44);
 }
 .text > h2 {
-    /* margin-top: 30px; */
     margin-bottom: 20px;
 }
 .text > p {
     margin-bottom: 30px;
+}
+
+@media all and (max-width : 320px ) {
+    .wrapper {
+        height: 220vh;
+    }
+    .atricle_item_wrapper {
+        display: flex;
+        flex-direction: column ;
+        justify-content: center;
+        align-items: center;
+    }
+    .text {
+        margin: 5% 5% 0 5%;
+        width: fit-content;
+        /* display: flex;
+        flex-direction: column ;
+        justify-content: center;
+        align-items: center; */
+    }
 }
