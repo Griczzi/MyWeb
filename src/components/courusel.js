@@ -15,8 +15,8 @@ const Courusel = ({ className, children }) => {
       <div className='content' style={{width: 100*children.length+'%', transform: `translateX(-${pos}00vw)`,}}>
         { children }
       </div>
-        <button className="corusel_left" onClick={ handleLeft }> <img src={ Arrow } style={{ transform: `rotate(180deg)`, opacity: `50%`, }} /> </button>
-        <button className="corusel_right" onClick={ handleRight }> <img src={ Arrow } style={{ opacity: `50%`, }} /> </button>
+        <button className="corusel_left" onClick={ handleLeft }> <img src={ Arrow } style={{ transform: `rotate(180deg)`, opacity: `50%`, }} className="arrow_left" /> </button>
+        <button className="corusel_right" onClick={ handleRight }> <img src={ Arrow } style={{ opacity: `50%`, }} className="arrow_right" /> </button>
     </div>
   )
 }

@@ -61,7 +61,7 @@
     }
 }
 
-/*******************  **********************/
+/******************* all window **********************/
 @media all and (max-width : 768px ) {
     .wrapper {
         height: fit-content;

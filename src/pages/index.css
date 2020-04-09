@@ -4,7 +4,6 @@
 }
 /* COURUSEL */
 .carusel_item {
-    /* border: red solid 1px; */
     width: 100%;
 
     background-size: 100%;
@@ -13,25 +12,68 @@
 }
 .carusel_item_one {
     background-image: url(../images/bg1.jpg);
-    color: rgb(41, 33, 21);
 }
-.catusel_item_wrapper {
+/* .catusel_item_wrapper {
     margin: 0 auto;
     max-width: 960px;
     padding-top: 500px;
     font-size: 25px; 
-}
-.catusel_item_wrapper > h1 { 
-    /* background: rgba(105, 101, 60, 0.459); */
-    /* color: rgb(223, 222, 191);  */
-} 
-
-/* .carusel_item_one > h1, 
-.carusel_item_one > p {
-    margin: 50px auto;
-    color:rgb(232, 240, 189);
 } */
 .carusel_item_two {
     background-image: url(../images/bg3.jpg);
 }
 
+
+/*****************************************/
+
+/******************** Iphone 5s ***********************/
+@media all and (max-width : 320px ) {
+    .carusel_item {
+        height: fit-content;
+    }
+    .carusel_item_one {
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+    .carusel_item_two {
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+    .layout_wrapper {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+    }
+}
+
+/******************* all window **********************/
+@media all and (max-width : 768px ) {
+    .carusel_item {
+        height: fit-content;
+    }
+    .carusel_item_one {
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+    .carusel_item_two {
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+    .corusel_left,
+    .corusel_right,
+    .arrow_left,
+    .arrow_right {
+        padding: 0px;
+        height: 22px;
+        width: 22px;
+    }
+    .content {
+        margin: 0;
+        padding: 0;
+    }
+
+}

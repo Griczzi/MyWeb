@@ -16,7 +16,6 @@ const Header = () => (
         <li><Link to="/about/" className="link_header"> Обо мне </Link></li>
       </ul>
     </div>
-    
   </header>
 )
 
