@@ -44,4 +44,13 @@
     padding-right: 25px;
     font-size: 15px;
 }
+.nav_logo {
+    height: 25px;
+}
+
+@media all and (max-width : 768px ) {
+    .nav_logo {
+        height: 20px;
+    }
+}
 

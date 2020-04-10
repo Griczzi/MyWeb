@@ -8,7 +8,7 @@ const Header = () => (
   <header className="header_wrapper">
     <div className="nav_wrapper">
       <div style={{ marginTop: `-6px`,}}>
-        <img src={Logo} style={{height: `25px`}} />
+        <img src={Logo} className="nav_logo" />
       </div>
       <ul className="main_list">
         <li><Link to="/" className="link_header"> Главная </Link></li>
