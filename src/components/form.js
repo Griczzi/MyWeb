@@ -11,7 +11,6 @@ import "./form.css"
       
       export default function Contact() {
         const [state, setState] = React.useState({})
-        //const setAlert = useState({ type: false, message: '' });
       
         const handleChange = (e) => {
           setState({ ...state, [e.target.name]: e.target.value })
@@ -22,7 +21,6 @@ import "./form.css"
 
         if ( !e.target.elements['name'].value || !e.target.elements['phone'].value || !e.target.elements['message'].value ) {
             alert('*****  Заполните все поля!  *****')
-            // setAlert({type: 'danger', message: 'Введите свои данные!'});
             return;
           }
 
@@ -37,10 +35,6 @@ import "./form.css"
             }),
           })
             .then(() => { alert('***** ЗАЯВКА ОТПРАВЛЕНА! *****') });
-            // .then(() => {
-            //  setAlert({type: 'success', message: 'Ваша заявка успешно отправлена!'});
-            // })
-            //  .catch((error) => alert('Не все поля заполнены! Заполните все поля =)'))
         }
         return (
             <form 

@@ -13,12 +13,6 @@
 .carusel_item_one {
     background-image: url(../images/bg1.jpg);
 }
-/* .catusel_item_wrapper {
-    margin: 0 auto;
-    max-width: 960px;
-    padding-top: 500px;
-    font-size: 25px; 
-} */
 .carusel_item_two {
     background-image: url(../images/bg3.jpg);
 }
@@ -52,7 +46,6 @@
 /******************* all window **********************/
 @media all and (max-width : 768px ) {
     .carusel_item {
-        /* height: fit-content; */
     }
     .carusel_item_one {
         height: 100%;
