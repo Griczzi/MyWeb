@@ -13,6 +13,7 @@ const Header = () => (
         <li><Link to="/" className="link_header"> Главная </Link></li>
         <li><Link to="/gallery/" className="link_header"> Галерея </Link></li>
         <li><Link to="/about/" className="link_header"> Обо мне </Link></li>
+        <li><Link to="/FAQ/" className="link_header"> F.A.Q </Link></li>
       </ul>
     </div>
   </header>
